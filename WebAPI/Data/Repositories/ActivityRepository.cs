@@ -1,4 +1,5 @@
-﻿using WebAPI.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using WebAPI.Models;
 
 namespace WebAPI.Data.Repositories
 {
@@ -13,7 +14,14 @@ namespace WebAPI.Data.Repositories
 
         public List<Activity> GetAllActivities()
         {
-            return _storeDbContext.Activities.ToList();
+            return _storeDbContext.Activity.ToList();
+        }
+
+        public List<Activity> GetAllActivitiesWithUser()
+        {
+            return _storeDbContext.Activity
+                .Include(u => u.User)
+                .ToList();
         }
     }
 }

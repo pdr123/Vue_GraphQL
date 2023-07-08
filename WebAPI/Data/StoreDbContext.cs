@@ -9,9 +9,9 @@ namespace WebAPI.Data
         {         
         }
 
-        public DbSet<Activity> Activities { get; set; }
-        public DbSet<Result> Results { get; set; }
-        public DbSet<User> Users { get; set; }
-        public DbSet<ResultStatus> ResultsStatus { get; set; }
+        public DbSet<Activity> Activity { get; set; }
+        public DbSet<Result> Result { get; set; }
+        public DbSet<User> User { get; set; }
+        public DbSet<ResultStatus> ResultStatus { get; set; }
     }
 }

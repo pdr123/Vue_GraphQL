@@ -13,7 +13,7 @@ namespace WebAPI.Data.Repositories
 
         public List<User> getAllUsers()
         {
-            return _storeDbContext.Users.ToList();
+            return _storeDbContext.User.ToList();
         }
     }
 }

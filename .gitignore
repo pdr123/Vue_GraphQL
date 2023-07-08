@@ -1,3 +1,19 @@
 
 .vs/*
 WebAPI/obj/*
+
+# Build results
+# WebAPI/[Dd]ebug/*
+# WebAPI/[Dd]ebugPublic/
+# WebAPI/[Rr]elease/
+# WebAPI/[Rr]eleases/
+# WebAPI/x64/
+# WebAPI/x86/
+# WebAPI/build/
+# WebAPI/bld/
+# WebAPI/[Bb]in/
+# WebAPI/[Oo]bj/
+# WebAPI/msbuild.log
+# WebAPI/msbuild.err
+# WebAPI/msbuild.wrn
+WebAPI/bin/[Dd]ebug/*

@@ -14,5 +14,10 @@ namespace WebAPI.Data.GraphQL
         {
             return resultRepository.GetResultsByUser(userId);
         }
+
+        public List<Result> GetAllResults([Service] ResultRepository resultRepository) 
+        {
+            return resultRepository.GetAllResults();
+        }
     }
 }

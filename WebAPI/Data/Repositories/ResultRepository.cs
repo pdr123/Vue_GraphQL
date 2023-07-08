@@ -14,18 +14,18 @@ namespace WebAPI.Data.Repositories
 
         public List<Result> GetAllResults() 
         {
-            return _storeDbContext.Results
-                .Include(a => a.Activity)
-                .Include(u => u.User)
-                .Include(s => s.Status)
+            return _storeDbContext.Result
+                .Include(a => a.Status)
+                .Include(a => a.Activity).ThenInclude(u => u.User)
                 .ToList();
         }
 
         public List<Result> GetResultsByUser(int userId)
         {
-            return _storeDbContext.Results
-                .Include(a => a.Activity)
+            return _storeDbContext.Result
+                .Include(a => a.Activity).ThenInclude(u => u.User)
                 .Include(s => s.Status)
+                .Include(u => u.User)
                 .Where(result => result.UserId == userId).ToList();
         }
     }
