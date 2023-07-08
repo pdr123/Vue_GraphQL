@@ -60,3 +60,4 @@
     #     }
     # }
    ```
+   # SPA (Vue) SetUp and Test
