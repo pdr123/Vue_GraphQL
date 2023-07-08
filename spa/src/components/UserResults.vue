@@ -6,7 +6,7 @@
   <p v-else-if="loading">Loading...</p>
   <p v-else-if="result == null">Api wrong</p>
   <p v-else v-for="result in result.allResults" :key="result.resultId">
-    {{ result.user.firstName }}
+    {{ result.user.firstName }} - {{result.noOfAttempts}} - {{result.activity.name}}
   </p>
 </template>
 
@@ -20,7 +20,8 @@ const CHARACTERS_QUERY = gql`
           allResults {
             resultId,
             user {
-              firstName
+              firstName,
+              dateOfBirth
             },
             activity {
               name,
