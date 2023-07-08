@@ -5,8 +5,8 @@
   <p v-if="error">Something went wrong...</p>
   <p v-else-if="loading">Loading...</p>
   <p v-else-if="result == null">Api wrong</p>
-  <p v-else v-for="product in result.allProducts" :key="product.productId">
-    {{ product.productName }}
+  <p v-else v-for="result in result.allResults" :key="result.resultId">
+    {{ result.user.firstName }}
   </p>
 </template>
 
@@ -17,9 +17,19 @@ import { useQuery } from '@vue/apollo-composable'
 
 const CHARACTERS_QUERY = gql`
   query {
-          allProducts {
-            productId, 
-            productName
+          allResults {
+            resultId,
+            user {
+              firstName
+            },
+            activity {
+              name,
+              inchargeId
+            }
+            noOfAttempts,
+            status {
+              description
+            }
           }
         }`
 
