@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import UserResult from './components/UserResults.vue'
+import UserResult from './components/UserResult.vue'
 
 export default {
   name: 'App',
