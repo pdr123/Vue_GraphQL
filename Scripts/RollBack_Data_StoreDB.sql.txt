@@ -1,0 +1,4 @@
+DROP TABLE [Result];
+DROP TABLE [Activity]
+DROP TABLE [User];
+DROP TABLE [ResultStatus];
