@@ -17,3 +17,26 @@ WebAPI/obj/*
 # WebAPI/msbuild.err
 # WebAPI/msbuild.wrn
 WebAPI/bin/[Dd]ebug/*
+
+spa/.DS_Store
+spa/node_modules
+spa/dist
+
+# spa environment files
+spa/.env.local
+spa/.env.*.local
+
+# spa Log files
+spa/npm-debug.log*
+spa/yarn-debug.log*
+spa/yarn-error.log*
+spa/pnpm-debug.log*
+
+# spa Editor directories and files
+spa/.idea
+spa/.vscode
+spa/*.suo
+spa/*.ntvs*
+spa/*.njsproj
+spa/*.sln
+spa/*.sw?

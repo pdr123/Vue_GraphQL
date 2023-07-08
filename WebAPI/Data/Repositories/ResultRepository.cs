@@ -17,6 +17,7 @@ namespace WebAPI.Data.Repositories
             return _storeDbContext.Result
                 .Include(a => a.Status)
                 .Include(a => a.Activity).ThenInclude(u => u.User)
+                .Include(u => u.User)
                 .ToList();
         }
 
