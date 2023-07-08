@@ -61,3 +61,31 @@
     # }
    ```
    # SPA (Vue) SetUp and Test
+Based on https://www.apollographql.com/blog/frontend/getting-started-with-vue-apollo/
+
+1) [Install latest version of Node](https://nodejs.org/en/download) - Node v18.16.1
+2) Npm v9.8.0
+3) Vue CLI v5.0.8
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
