@@ -6,13 +6,13 @@
 // https://www.learmoreseekmore.com/2022/01/basic-graphql-crud-operation-dotnet6-hotchocolate-v12-sqldatabase.html
 // https://dev.to/jioophoenix/hotchocolate-introduction-to-graphql-for-asp-net-core-part-1-2e27
 
+// further reference
+// https://jscrambler.com/blog/building-a-crud-app-with-vue-and-graphql
+
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Data;
 using WebAPI.Data.GraphQL;
 using WebAPI.Data.Repositories;
-//using GraphqlCoreEmptyChocolate.Data.Repositories;
-//using GraphqlCoreEmptyChocolate.Data;
-//using GraphqlCoreEmptyChocolate.Data.GraphQL;
 
 var builder = WebApplication.CreateBuilder(args);
 
