@@ -109,19 +109,19 @@ VALUES ('Olivia', 'Taylor', 'olivia.taylor@example.com', '1996-02-14', GETDATE()
 
 -- Inserting test data for Activity 1
 INSERT INTO [Activity] (Name, Description, InchargeId, BolActive)
-VALUES ('Meeting', 'Weekly team meeting', 1, 1);
+VALUES ('Systems Neuroscience', 'Systems Neuroscience Activities', 1, 1);
 
 -- Inserting test data for Activity 2
 INSERT INTO [Activity] (Name, Description, InchargeId, BolActive)
-VALUES ('Training', 'Sales training session', 1, 1);
+VALUES ('Cognitive and Behavioral Neuroscience', 'Cognitive and Behavioral Neuroscience Activities', 1, 1);
 
 -- Inserting test data for Activity 3
 INSERT INTO [Activity] (Name, Description, InchargeId, BolActive)
-VALUES ('Presentation', 'Product demo for clients', 2, 1);
+VALUES ('Computational Neuroscience', 'Computational Neuroscience Activites', 2, 1);
 
 -- Inserting test data for Activity 4
 INSERT INTO [Activity] (Name, Description, InchargeId, BolActive)
-VALUES ('Workshop', 'Design thinking workshop', 2, 0);
+VALUES ('Cellular and Molecular Neuroscience', 'Cellular and Molecular Neuroscience Activities', 2, 0);
 
 -- Inserting test data for Activity 5
 INSERT INTO [Activity] (Name, Description, InchargeId, BolActive)
