@@ -9,8 +9,11 @@
   <ItemGroup>
     <PackageReference Include="HotChocolate.AspNetCore" Version="13.3.1" />
     <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.3.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.20" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.8" />
+    <PackageReference Include="MQTTnet" Version="4.2.1.781" />
+    <PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="4.2.1.781" />
   </ItemGroup>
 
 </Project>
